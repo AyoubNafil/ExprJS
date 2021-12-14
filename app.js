@@ -13,8 +13,7 @@ con.on('open', () => {
 
 app.use(express.json())
 
-const alienRouter = require('./routes/aliens')
-app.use('/aliens',alienRouter)
+
 const blocRouter = require('./routes/blocs')
 app.use('/blocs',blocRouter)
 const salleRouter = require('./routes/salles')
